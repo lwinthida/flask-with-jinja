@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Flask with jinja.</title>
+	</head>
+	<body>
+		
+		<ul><li><img src="{{url_for('static',filename='cumdy_logo2.jpg')}}"></li>
+	        {#This is comment block.#}
+		{%set name="Thida Lwin"%}
+		{%set username="lwinthida"%}
+		<li>{{name}}</li>
+		<li><a href="http://github.com/{{username}}">GitHub</a></li>
+		<li><a href="http://{{username}}.herokuapp.com">Heroku</a></li>
+	</ul>
+	</body>
+</html>
